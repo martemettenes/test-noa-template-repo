@@ -1,0 +1,18 @@
+{/* Vimeo.mdx */}
+
+import * as Vimeo from "./Vimeo.stories";
+import { Controls, Meta, Primary, Story } from "@storybook/blocks";
+
+<Meta of={Vimeo} />
+
+# Vimeo facade
+
+The Vimeo facade is a Vimeo player component.
+It will load a placeholder image from Vimeo and replace it with the video player when the user clicks on it.
+The goal is to reduce the initial page load time by not loading the video player until the user clicks on it.
+
+<Primary />
+
+## Props
+
+<Controls />

@@ -1,0 +1,26 @@
+{
+  "name": "template-example",
+  "version": "2.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "ts:check": "turbo run ts:check",
+    "prettier:fix": "turbo run prettier:fix",
+    "prettier:check": "turbo run prettier:check",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^1.8.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.19"
+}

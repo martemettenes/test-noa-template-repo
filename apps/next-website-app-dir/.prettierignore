@@ -1,0 +1,12 @@
+package-lock.json
+yarn.lock
+dist
+tslint.json
+helm
+src/assets/styles/vendor
+.circleci/config.yml
+dxrx-dlp-fe-components/*
+coverage
+reports
+bitbucket-pipelines.yml
+.next

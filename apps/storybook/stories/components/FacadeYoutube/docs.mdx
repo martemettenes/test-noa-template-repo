@@ -1,0 +1,18 @@
+{/* Youtube.mdx */}
+
+import * as Youtube from "./Youtube.stories";
+import { Controls, Meta, Primary, Story } from "@storybook/blocks";
+
+<Meta of={Youtube} />
+
+# Youtube facade
+
+The Youtube facade is a Youtube player component.
+It will load a placeholder image from Youtube and replace it with the video player when the user clicks on it.
+The goal is to reduce the initial page load time by not loading the video player until the user clicks on it.
+
+<Primary />
+
+## Props
+
+<Controls />

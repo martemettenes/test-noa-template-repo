@@ -1,0 +1,36 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Next: Edge",
+			"request": "launch",
+			"type": "msedge",
+			"url": "http://localhost:3000",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Next: Node",
+			"runtimeExecutable": "yarn",
+			"runtimeArgs": ["run", "debug"],
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Next: Node Windows",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "yarn run dev"
+		}
+	],
+	"compounds": [
+		{
+			"name": "Next: Full (Mac/Linux)",
+			"configurations": ["Next: Node", "Next: Edge"]
+		},
+		{
+			"name": "Next: Full (Windows)",
+			"configurations": ["Next: Node Windows", "Next: Edge"]
+		}
+	]
+}

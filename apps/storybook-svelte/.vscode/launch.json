@@ -1,0 +1,29 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Storybook Debug (Edge)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "yarn build && yarn storybook --ci",
+			"internalConsoleOptions": "openOnFirstSessionStart",
+			"serverReadyAction": {
+				"pattern": "Local:.+(https?://[^:]+:[0-9]+)",
+				"uriFormat": "%s",
+				"action": "debugWithEdge"
+			}
+		},
+		{
+			"name": "Storybook Debug (Chrome)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "yarn build && yarn storybook --ci",
+			"internalConsoleOptions": "openOnFirstSessionStart",
+			"serverReadyAction": {
+				"pattern": "Local:.+(https?://[^:]+:[0-9]+)",
+				"uriFormat": "%s",
+				"action": "debugWithChrome"
+			}
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Check TS syntax and formatting",
+  "description": "Type checks TS, checks formatting and run unit tests.",
+  "iconName": "octicon beaker",
+  "categories": ["TypeScript", "Prettier", "Jest"]
+}
